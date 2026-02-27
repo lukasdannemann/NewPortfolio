@@ -7,7 +7,7 @@ export default function ProjectsDiv(){
     return(
         <>
         <div>
-            <h1>Projekt</h1>
+            <h2>Projekt</h2>
            <section className="projectsDiv">
             {projects.map((project) => (
                 <ProjectCard key={project.id} project={project} />
