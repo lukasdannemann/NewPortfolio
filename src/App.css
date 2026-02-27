@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+  margin: 0;
+  text-align: center;
+  --font-heading: 'Source code pro', monospace;
+  --font-body: 'Karla', sans-serif;
+  --font-mono: 'Inconsolata', monospace;
+
+
+  --bg-color:        #141a17;  /* djup mörkgrön-svart */
+  --surface:   #1e2b24;  /* mörkgrön yta, kort & navbar */
+  --surface-2: #26332b;  /* hover-states */
+  --primary:   #52b788;  /* mellangrönt, ljusare för läsbarhet mot mörk bg */
+  --accent:    #95d5b2;  /* ljusgrön accent */
+  --text-color:      #f0ebe3;  /* varmt benvit istället för kall vit */
+  --muted:     #8a9e94;  /* gröntonad grå */
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 0;
+  margin: 0;
+  color: var(--text-color);
+  font-family: var(--font-body);
+}
+
+h1{
+  font-family: var(--font-heading);
+  color: var(--header-color)
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover{
+  color: var(--link-color);
+}
+
+

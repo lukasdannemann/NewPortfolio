@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  align-items: center;        /* h1 och nav på samma höjd */
+  justify-content: space-between; /* h1 till vänster, nav till höger */
+  padding: 1rem 5rem;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;                  /* jämnt mellanrum mellan länkarna */
+}
+
+nav a {
+  text-decoration: none;
+  padding-bottom: 6px;          /* avstånd mellan text och linje */
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--primary);
+  border-color: var(--primary);
+}
