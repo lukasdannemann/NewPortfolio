@@ -6,13 +6,18 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-text">
-       <p><span className='intro-label'>Name:</span> Lukas Dannemann</p>
-       <p><span className='intro-label'>Title: </span> Fullstack Developer</p>
-       <p><span className='intro-label'>Education: </span> Nackademin</p>
-       <p><span className='intro-label'>Introduction:</span>
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Non officiis aspernatur doloremque 
-       cumque explicabo repellat dolorum, quia debitis corrupti cupiditate a
-       nimi iusto aperiam eveniet numquam, dicta accusantium quisquam alias quis?</p>
+       <p><span className='hero-name'>Lukas Dannemann</span></p>
+       <p><span className='intro-label'>&gt; title</span></p>
+       <p>Fullstack Web Developer</p>
+       <p><span className='intro-label'>&gt; stack</span></p>
+       <p>MERN (MongoDB - Express - React - Node.js)</p>
+       <p><span className='intro-label'>&gt; status</span></p>
+       <p>Student @ Nackademin</p>
+       <p><span className='intro-label'>&gt; looking for</span></p>
+       <p>Internship <span className='available'>november 2026 - april 2027</span></p>
+        <a className="contact-link" href="#">
+          <span><span className='arrow'>&gt;</span> contact me</span>
+        </a>
       </div>
 
       <div className="hero-image">

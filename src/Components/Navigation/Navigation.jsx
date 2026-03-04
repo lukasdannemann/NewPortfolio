@@ -5,7 +5,7 @@ import './Navigation.css';
 const Navigation = () => {
 
   const navLinks = [
-    {label: 'About me', to: '/about'},
+    {label: 'About', to: '/about'},
     {label: 'Projects', to: '/projects'},
     {label: 'CV', to: '/'}
   ]
@@ -14,7 +14,7 @@ const Navigation = () => {
   <>
   <div className='navbar'>
     <header>
-      <NavLink to= '/'><h1>L/D</h1></NavLink>
+      <NavLink to= '/'><h1>L.D</h1></NavLink>
       <p>Web Developer</p>
       </header>
     

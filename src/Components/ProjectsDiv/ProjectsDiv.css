@@ -1,9 +1,20 @@
-.projectsDiv{
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
+
+.projectsDiv {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
 }
 
-h2{
-    font-family: var(--font-heading);
+.projectsDiv--expanded {
+  gap: 2rem;
+}
+
+.projectsDiv--expanded .card {
+  width: 480px;
+}
+
+.projectsDiv--expanded .card-thumb {
+  height: 240px;
 }

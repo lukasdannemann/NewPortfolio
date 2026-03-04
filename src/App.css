@@ -6,7 +6,7 @@
   margin: 0;
   text-align: center;
   --font-heading: 'Source code pro', monospace;
-  --font-body: 'Karla', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
   --font-mono: 'Inconsolata', monospace;
 
 
@@ -36,9 +36,8 @@ a{
   text-decoration: none;
   color: var(--text-color);
 }
-
-a:hover{
-  color: var(--link-color);
-}
+/* 
+a:hover{;
+} */
 
 
