@@ -1,12 +1,17 @@
 import './Hero.css'
 import profileImg from '../../assets/IMG_hike.JPG'
+import { MdLocationPin } from 'react-icons/md'
 
 // components/Hero.jsx
 export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-text">
-       <p><span className='hero-name'>Lukas Dannemann</span></p>
+        <div>
+          <p><span className='hero-name'>Lukas Dannemann</span></p>
+          <p className='under-text'><MdLocationPin /><span>Stockholm, Sweden</span></p>
+        </div>
+       
        <p><span className='intro-label'>&gt; title</span></p>
        <p>Fullstack Web Developer</p>
        <p><span className='intro-label'>&gt; stack</span></p>
