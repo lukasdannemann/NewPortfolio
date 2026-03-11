@@ -6,8 +6,7 @@ const Navigation = () => {
 
   const navLinks = [
     {label: 'About', to: '/about'},
-    {label: 'Projects', to: '/projects'},
-    {label: 'CV', to: '/'}
+    {label: 'Projects', to: '/projects'}
   ]
 
   return(

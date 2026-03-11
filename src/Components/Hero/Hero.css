@@ -91,9 +91,10 @@
 /* --- Bild-sidan --- */
 .hero-image {
   flex-shrink: 0;
-  width: 340px;
-  height: 340px;
+  aspect-ratio: 1 / 1;
   border-radius: 40% 60% 55% 45% / 45% 45% 55% 55%;
+  max-height: 360px;
+  width: auto;
   overflow: hidden;
   border: 2px solid var(--accent);
   box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.8), 0 0 0 1px var(--primary);
