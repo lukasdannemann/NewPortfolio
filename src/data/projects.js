@@ -1,5 +1,5 @@
 import activityAppIMG from "../assets/ActivityApp_img.jpg";
-import pokemonAppIMG from "../assets/PokemonApp_IMG.png";
+import pokemonAppIMG from "../assets/PokemonApp_img.png";
 
 const projects = [
   {
