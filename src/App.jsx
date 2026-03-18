@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer';
 import Home from './pages/Home/Home'
 import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <ScrollToTop />
       </div>
     </Router>
   );

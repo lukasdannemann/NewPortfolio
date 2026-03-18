@@ -1,0 +1,35 @@
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--accent);
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.8), 0 0 0 1px var(--primary);
+  color: var(--accent);
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease,
+              color 0.2s, border-color 0.2s;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.scroll-top:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}

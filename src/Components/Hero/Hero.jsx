@@ -8,8 +8,8 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-text">
         <div>
-          <p><span className='hero-name'>Lukas Dannemann</span></p>
-          <p className='under-text'><MdLocationPin /><span>Stockholm, Sweden</span></p>
+          <p className='header-name'> Lukas Dannemann</p>
+          <p className='about-meta'><MdLocationPin className='location-pin'/><span>Stockholm, Sweden</span></p>
         </div>
        
        <p><span className='intro-label'>&gt; title</span></p>
