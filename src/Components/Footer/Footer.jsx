@@ -5,11 +5,6 @@ import './Footer.css'
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer-inner">
-        <div className="footer-left">
-          <span className="footer-logo">L.D</span>
-          <span className="footer-tagline">Fullstack Web Developer</span>
-        </div>
 
         <div className="footer-links">
           <a href="mailto:lukasdannemann@outlook.com" className="footer-link" aria-label="Email">
@@ -25,7 +20,6 @@ export default function Footer() {
             <span>linkedin.com/in/lukas-dannemann</span>
           </a>
         </div>
-      </div>
 
       <div className="footer-bottom">
         <span className="footer-muted">© {new Date().getFullYear()} Lukas Dannemann</span>

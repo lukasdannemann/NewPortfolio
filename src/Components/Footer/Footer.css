@@ -7,14 +7,6 @@
   margin-top: 4rem;
 }
 
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-}
-
 /* Vänster – logotyp + tagline */
 .footer-logo {
   font-size: 1.4rem;
@@ -31,12 +23,11 @@
   letter-spacing: 0.08em;
 }
 
-/* Höger – länkar */
 .footer-links {
   display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-  align-items: flex-end;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding-bottom: var(--card-padding-y);
 }
 
 .footer-link {

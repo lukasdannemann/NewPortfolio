@@ -1,4 +1,6 @@
-.about-bio {
+
+.projects-intro-text {
+  opacity: 0.75;
   line-height: var(--leading-normal);
   font-size: var(--text-base);
 }

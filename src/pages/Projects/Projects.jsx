@@ -1,18 +1,11 @@
+import ProjectsIntro from '../../Components/ProjectsIntro/ProjectsIntro'
 import ProjectsDiv from '../../Components/ProjectsDiv/ProjectsDiv'
 
-
-export default function Projects(){
-
-    return(
-        <>
-        <div>
-            <p><span className='intro-label'>&gt; projects</span></p>
-            <p>Frontend-focused work from the first semester of my fullstack education. 
-                More to come as I dive deeper into the backend.
-                
-            </p>
+export default function Projects() {
+    return (
+        <div className='page-content'>
+            <ProjectsIntro />
+            <ProjectsDiv expanded />
         </div>
-        <ProjectsDiv expanded/>
-        </>
     )
 }

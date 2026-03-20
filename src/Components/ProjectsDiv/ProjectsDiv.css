@@ -1,18 +1,19 @@
 
 .projectsDiv {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 2rem;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .projectsDiv--expanded {
   gap: 2rem;
+  margin-top: 0;
 }
 
 .projectsDiv--expanded .card {
-  width: 480px;
+  flex: 1 1 400px;
 }
 
 .projectsDiv--expanded .card-thumb {
