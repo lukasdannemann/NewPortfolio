@@ -7,7 +7,6 @@ export default function AboutMe() {
       <p><span className="about-label">&gt; about</span></p>
 
       <p className="about-meta">
-        <span className="status-dot" />
         <MdLocationPin />
         <span>Stockholm, Sweden</span>
         <span className="meta-sep">·</span>
