@@ -30,13 +30,13 @@ export default function ProjectCard({ project, expanded = false }) {
                     </div>
                 </div>
                 <div className="card-footer">
-                    {!expanded && (
-                        <a className="card-link" href="/projects">Show more →</a>
-                    )}
                     <a className="card-link" target='_blank' href={liveUrl}>
                         Live site <span className="arrow">↗</span>
                     </a>
-                    <a className="card-link" target='_blank' href={githubUrl}>GitHub →</a>
+                    <a className="card-link" target='_blank' href={githubUrl}>GitHub ↗</a>
+                    {!expanded && (
+                        <a className="card-link" href="/projects">Show more →</a>
+                    )}
                 </div>
             </div>
         </>
