@@ -12,7 +12,7 @@ export default function About() {
 
       <div className="about-card about-card--slim">
         <a className="contact-link" href="#">
-          <span><span className='arrow'>&gt;</span> contact me</span>
+          <span className="arrow">&gt;</span> contact me
         </a>
       </div>
     </div>

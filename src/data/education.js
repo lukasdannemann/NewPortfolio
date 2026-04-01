@@ -13,9 +13,9 @@ const periods = [
     year: "2026 jan–may",
     title: "Backend & Databases",
     desc: 
-    `Starting off with the backend, learning the fundeamentals of relational databases using PostgreSQL and pgAdmin, focusing on data structure and complex queries.
-     We then transitioned into document-based storage with MongoDB, where I gained hands-on experience using Mongoose to integrate databases with Node.js servers.
-      Understanding the core differences between SQL and NoSQL has been key in learning how to produce efficient and scalable backend solutions`,
+    `Starting off with the backend, learning the fundamentals of relational databases using PostgreSQL and pgAdmin, focusing on data structure and queries.
+     We then transitioned into document-based storage with MongoDB, where I gained experience using Mongoose to integrate databases with Node.js servers.
+      Understanding the differences between SQL and NoSQL has been key in learning how to produce efficient and scalable databases depending on the end-goal.`,
     courses: ["Node.js", "Express", "MongoDB", "Auth / JWT", "PostgreSQL"],
   },
   {

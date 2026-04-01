@@ -16,9 +16,9 @@ export default function AboutMe() {
       </p>
 
       <p className="about-bio">
-        I got into development through a curiosity for how things work on the web — and quickly got
-        hooked on building my own. Today, I'm a frontend-focused fullstack developer in training who
-        enjoys working through the entire process, from early ideas to finished products.
+        I got into development through a curiosity for how things work behind the scenes, and pretty quickly found myself wanting to build things on my own.
+        Since then, I’ve really come to enjoy the whole process. From early ideas to finished products, even if it means figuring things out along the way.
+        I’m currently studying fullstack development at Nackademin and I’m now looking for a LIA opportunity where I can keep learning, contribute, and get real experience working with others.
       </p>
     </div>
   )
