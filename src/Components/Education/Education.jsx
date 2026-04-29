@@ -1,10 +1,11 @@
 import './Education.css'
-import periods from '../../data/education'
+import periods from '../../data/education.js'
 
 export default function Education() {
   return (
     <div className="about-card">
       <p><span className="about-label">&gt; education</span></p>
+      <h3 className='edu-header'>Fullstack web development, Nackademin, 2025-2027</h3>
 
       <div className="edu-timeline">
         {periods.map((p) => (
@@ -12,7 +13,10 @@ export default function Education() {
             <span className="edu-year">{p.year}</span>
             <div className="edu-content">
               <p className="edu-title">{p.title}</p>
-              <p className="edu-desc">{p.desc}</p>
+              {p.desc.map((d, index) => (
+                <p key={index} className="edu-desc">&gt; {d}</p>
+              ))}
+              
               <div className="course-pills">
                 {p.courses.map((c) => (
                   <span key={c} className="course-pill">{c}</span>
@@ -26,12 +30,12 @@ export default function Education() {
         ))}
       </div>
 
-      <div className="progression-block">
+      {/* <div className="progression-block">
         <p><span className="about-label">&gt; progression</span></p>
         <div className="progression">
           <div>
-            <p className="prog-label">// då</p>
-            <p className="prog-then">Statiska HTML-sidor, lösa JS-scripts, ingen struktur</p>
+            <p className="prog-label">// beginning</p>
+            <p className="prog-then">Static HTML websites, </p>
           </div>
           <span className="prog-arrow">→</span>
           <div>
@@ -39,7 +43,7 @@ export default function Education() {
             <p className="prog-now">Komponentbaserad React, fullstack MERN, deploy till produktion</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -32,9 +32,9 @@ const photos = [
 export default function PersonalLife() {
   return (
     <div className="about-card">
-      <p><span className="about-label">&gt; utanför skärmen</span></p>
-      <p className="about-desc">
-        Backpackade Syd- och Centralamerika — planerat lite, upplevt mycket.
+      <p><span className="about-label">&gt; when afk</span></p>
+      <p>
+        
       </p>
 
       <div className="photo-grid">

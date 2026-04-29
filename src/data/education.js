@@ -1,27 +1,34 @@
 const periods = [
   {
     year: "2025 aug–dec",
-    title: "Basics — web development with JavaScript",
+    title: "Frontend — From Vanilla JS to React",
     desc: 
-      `Started off the journey with basic web development fundamentals of HTML, CSS and Vanilla JavaScript.
-       As the course progressed, I enjoyed the transition to implementing my knowledge in React and seeing everything come together.
-        Learning Git during the course was a bit of a challenge at first, but quickly became a valuable tool rather than a 'mission'. 
-        For our final projects, we worked in agile teams using the Scrum framework, which gave me great insight into collaborative development.`,
+      [
+      "Mastered HTML, CSS, and modern JavaScript",
+      "Transitioned to React to build dynamic and responsive UI",
+      "Used Git & GitHub for efficient version control and workflow",
+      "Collaborated in agile Scrum teams to get valuable real work experience"
+    ],
     courses: ["HTML & CSS", "JavaScript", "Git & GitHub", "React", "Scrum"],
   },
   {
     year: "2026 jan–may",
     title: "Backend & Databases",
     desc: 
-    `Starting off with the backend, learning the fundamentals of relational databases using PostgreSQL and pgAdmin, focusing on data structure and queries.
-     We then transitioned into document-based storage with MongoDB, where I gained experience using Mongoose to integrate databases with Node.js servers.
-      Understanding the differences between SQL and NoSQL has been key in learning how to produce efficient and scalable databases depending on the end-goal.`,
+    [
+      "Designed and queried relational databases using PostgreSQL",
+      "Gained experience in MongoDB and Mongoose for scalable NoSQL solutions",
+      "Developed RESTful APIs and server-side logic with Node.js and Express",
+      "Implemented secure authentication flows using JWT"
+    ],
     courses: ["Node.js", "Express", "MongoDB", "Auth / JWT", "PostgreSQL"],
   },
   {
-    year: "2026 aug-dec",
-    title: "TypeScript & Internship",
-    desc: "",
+    year: "2026 aug-",
+    title: "TypeScript, internship and final project",
+    desc: ['LIA (Lärande i arbete), internship as a course during 6 months',
+      'Starting November 9th 2026, ends April 24th 2027'
+    ],
     courses: [],
     highlight: "LIA-plats sökes",
   },

@@ -17,6 +17,12 @@
   padding-bottom: 0;
 }
 
+.edu-header {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
 .edu-year {
   color: var(--accent);
   opacity: 0.6;
