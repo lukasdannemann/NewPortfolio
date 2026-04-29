@@ -6,9 +6,8 @@ const projects = [
     id: 1,
     type: "Team",
     title: "Activity App",
-    shortDescription: [
-  "Group project built in React featuring todos, habits and an event planner. I built the event module with filtering, edit/delete and dynamic styling based on date."
-],
+    shortDescription:
+  "Group project built in React featuring todos, habits and an event planner. I built the event module with filtering, edit/delete and dynamic styling based on date.",
 longDescription: [
   "HaloMind is a productivity app built in React as a group project using agile methods – daily standups via Discord and sprint planning in Trello. The app brings todos, habits and events together in one place, with a dashboard showing the latest activity from each section.",
   "I was responsible for the event planner module. Users can create events with a date, time and description, and edit or delete them at any time.",
@@ -23,9 +22,8 @@ longDescription: [
     id: 2,
     type: "Solo",
     title: "Pokédex",
-    shortDescription: [
-  "A React app exploring the PokéAPI – browse all Pokémon and click through to a detail card with stats and dynamic styling based on strengths."
-],
+    shortDescription:
+  "A React app exploring the PokéAPI – browse all Pokémon and click through to a detail card with stats and dynamic styling based on strengths.",
 longDescription: [
   "A React app that fetches data from the PokéAPI and displays a scrollable list of all Pokémon.",
   "Clicking a Pokémon navigates via React Router to a detail page with an individual card showing its stats – styling automatically adapts based on the Pokémon's strengths to give a visual sense of its character."

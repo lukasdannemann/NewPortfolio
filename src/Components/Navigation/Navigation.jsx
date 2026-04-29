@@ -14,7 +14,7 @@ const Navigation = () => {
   <div className='navbar'>
     <header>
       <NavLink to= '/'><h1>L.D</h1></NavLink>
-      <p>Web Developer</p>
+      <p>Fullstack Web Developer</p>
       </header>
     
     <nav>

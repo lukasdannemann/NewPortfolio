@@ -11,7 +11,7 @@ export default function About() {
       <PersonalLife />
 
       <div className="about-card about-card--slim">
-        <a className="contact-link" href="#">
+        <a className="contact-link" href="mailto: lukas.dannemann@yh.nackademin.com">
           <span className="arrow">&gt;</span> contact me
         </a>
       </div>
