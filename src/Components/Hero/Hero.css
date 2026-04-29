@@ -42,10 +42,8 @@
 .hero-location {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
   color: var(--muted);
   font-size: var(--text-sm);
-  opacity: 0.75;
 }
 
 .hero-divider {

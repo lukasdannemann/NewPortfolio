@@ -8,7 +8,7 @@ export default function Hero() {
 
       <div className="hero-text">
         <p><span className="hero-name">Lukas Dannemann</span></p>
-        <p className="hero-location"><MdLocationPin /><span>Stockholm, Sweden</span></p>
+        <p className="hero-location"><span><MdLocationPin /></span><span>Stockholm, Sweden</span></p>
 
         <hr className="hero-divider" />
 

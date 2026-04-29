@@ -7,13 +7,13 @@
 .photo-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 140px;
+  grid-template-rows: 170px 170px;
   gap: 0.6rem;
 }
 
 .photo-card {
   border-radius: 10px;
-  border: 1px solid rgba(82, 183, 136, 0.3);
+  border: 1px solid var(--accent);
   overflow: hidden;
   position: relative;
   background: rgba(0, 0, 0, 0.3);
@@ -29,16 +29,6 @@
 .photo-card--big    { grid-column: 1; grid-row: 1 / 3; }
 .photo-card--top    { grid-column: 2; grid-row: 1; }
 .photo-card--bottom { grid-column: 2; grid-row: 2; }
-
-.photo-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: var(--text-sm);
-  opacity: 0.2;
-}
 
 .photo-caption {
   position: absolute;

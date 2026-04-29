@@ -1,38 +1,36 @@
 import './PersonalLife.css'
 
 // Byt ut mot riktiga bilder när du har dem:
-// import img1 from '../../assets/foto1.jpg'
-// import img2 from '../../assets/foto2.jpg'
-// import img3 from '../../assets/foto3.jpg'
+import img1 from '../../assets/Acatenango.jpg'
+import img2 from '../../assets/HighCoast.jpg'
+import img3 from '../../assets/SaltMine.jpg'
 
 const photos = [
   {
     className: 'photo-card--big',
-    // src: img1,
-    label: '// centralamerika',
-    caption: 'Någonstans längs vägen',
+    src: img1,
+    caption: 'Acatenango',
     alt: 'Centralamerika',
   },
   {
     className: 'photo-card--top',
-    // src: img2,
-    label: '// natur',
-    caption: 'Vandring / utsikt',
+    src: img2,
+    caption: 'Höga Kusten',
     alt: 'Natur',
   },
   {
     className: 'photo-card--bottom',
-    // src: img3,
-    label: '// sydamerika',
-    caption: 'Kort beskrivning',
+    src: img3,
+    caption: 'Salineras de Maras',
     alt: 'Sydamerika',
+    position: 'center 70%'
   },
 ]
 
 export default function PersonalLife() {
   return (
     <div className="about-card">
-      <p><span className="about-label">&gt; when afk</span></p>
+      <p><span className="about-label">&gt; afk</span></p>
       <p>
         
       </p>
@@ -41,8 +39,7 @@ export default function PersonalLife() {
         {photos.map((photo) => (
           <div key={photo.className} className={`photo-card ${photo.className}`}>
             {/* När du har bilder: ta bort photo-placeholder och avkommentera img */}
-            {/* <img src={photo.src} alt={photo.alt} /> */}
-            <div className="photo-placeholder">{photo.alt}</div>
+            <img src={photo.src} alt={photo.alt} style={{ objectPosition: photo.position  }}/>
             <div className="photo-caption">
               <span className="photo-caption-label">{photo.label}</span>
               {photo.caption}

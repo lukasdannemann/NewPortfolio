@@ -8,10 +8,17 @@ import About from './pages/About/About';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
 import './App.css';
 
+
 function App() {
+  const isFirst = !sessionStorage.getItem('loaded');
+  if (isFirst) sessionStorage.setItem('loaded', '1');
+
+    console.log('isFirst:', isFirst);
+
+
   return (
     <Router>
-      <div className="app">
+      <div className={`app ${isFirst ? 'first-load' : ''}`}>
         <Navigation />
         <main className="main-content">
           <Routes>

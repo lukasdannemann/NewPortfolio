@@ -1,23 +1,23 @@
 
-.navbar {
+.first-load .navbar {
   opacity: 0;
   animation: fadeInDown 0.5s ease forwards;
   animation-delay: 0s;
 }
 
-.hero {
+.first-load .hero {
   opacity: 0;
   animation: fadeInDown 0.6s ease forwards;
   animation-delay: 0.2s;
 }
 
-.projectsDiv {
+.first-load .projectsDiv {
   opacity: 0;
   animation: fadeInDown 0.6s ease forwards;
   animation-delay: 0.3s;
 }
 
-.footer {
+.first-load .footer {
   opacity: 0;
   animation: fadeInUp 0.5s ease forwards;
   animation-delay: 1.1s;
