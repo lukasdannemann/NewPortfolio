@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './Components/Navigation/Navigation'
 import Footer from './Components/Footer/Footer';
@@ -10,15 +10,24 @@ import './App.css';
 
 
 function App() {
-  const isFirst = !sessionStorage.getItem('loaded');
-  if (isFirst) sessionStorage.setItem('loaded', '1');
+  const [shouldAnimate, setShouldAnimate] = useState(() => {
+    const isFirst = !sessionStorage.getItem('loaded');
+    const navType = performance.getEntriesByType('navigation')[0]?.type;
+    if (isFirst) sessionStorage.setItem('loaded', '1');
+    return isFirst || navType === 'reload';
+  });
 
-    console.log('isFirst:', isFirst);
+  useEffect(() => {
+    if (shouldAnimate) {
+      const timer = setTimeout(() => setShouldAnimate(false), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
 
   return (
     <Router>
-      <div className={`app ${isFirst ? 'first-load' : ''}`}>
+      <div className={`app ${shouldAnimate ? 'first-load' : ''}`}>
         <Navigation />
         <main className="main-content">
           <Routes>
