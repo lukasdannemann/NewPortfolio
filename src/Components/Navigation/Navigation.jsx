@@ -38,7 +38,7 @@ const Navigation = () => {
   {showConfirm && (
     <div className='cv-overlay' onClick={() => setShowConfirm(false)}>
       <div className='cv-modal' onClick={e => e.stopPropagation()}>
-        <p>Vill du ladda ner mitt CV?</p>
+        <p>Do you want to download my CV?</p>
         <div className='cv-modal-actions'>
           <a
             href='/CV-jan2026.pdf'
@@ -46,10 +46,10 @@ const Navigation = () => {
             className='cv-confirm'
             onClick={() => setShowConfirm(false)}
           >
-            Ja, ladda ner
+            Yes, download
           </a>
           <button className='cv-cancel' onClick={() => setShowConfirm(false)}>
-            Avbryt
+            Cancel
           </button>
         </div>
       </div>
