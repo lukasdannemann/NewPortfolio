@@ -9,20 +9,20 @@ const photos = [
   {
     className: 'photo-card--big',
     src: img1,
-    caption: 'Acatenango',
-    alt: 'Centralamerika',
+    caption: 'Acatenango, Guatemala',
+    alt: 'Guatemala',
   },
   {
     className: 'photo-card--top',
     src: img2,
-    caption: 'Höga Kusten',
-    alt: 'Natur',
+    caption: 'Höga Kusten, Sverige',
+    alt: 'Höga Kusten',
   },
   {
     className: 'photo-card--bottom',
     src: img3,
-    caption: 'Salineras de Maras',
-    alt: 'Sydamerika',
+    caption: 'Salineras de Maras, Peru',
+    alt: 'Peru',
     position: 'center 70%'
   },
 ]

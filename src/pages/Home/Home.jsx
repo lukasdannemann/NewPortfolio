@@ -7,7 +7,6 @@ export default function Home() {
 
     return (
         <div className='page-content'>
-            <p className='small-header'><span className="about-label">&gt; intro</span></p>
             <Hero />
             <div className='projects-home'>
             <p className='small-header'><span className="about-label">&gt; projects</span></p>
