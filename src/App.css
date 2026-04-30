@@ -136,3 +136,18 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .page-content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .header-name {
+    font-size: var(--text-xl);
+  }
+}

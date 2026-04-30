@@ -33,3 +33,10 @@
   border-color: var(--primary);
   transform: translateY(-3px);
 }
+
+@media (max-width: 768px) {
+  .scroll-top {
+    bottom: 1rem;
+    right: 1rem;
+  }
+}

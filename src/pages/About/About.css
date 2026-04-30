@@ -11,9 +11,3 @@
   text-align: left;
 }
 
-/* ── RESPONSIVT ── */
-@media (max-width: 768px) {
-  .about-card {
-    padding: 1.3rem 1.5rem;
-  }
-}

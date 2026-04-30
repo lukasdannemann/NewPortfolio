@@ -5,6 +5,7 @@ import './Navigation.css';
 
 const Navigation = () => {
   const [showConfirm, setShowConfirm] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
     {label: 'About', to: '/about'},
@@ -15,21 +16,33 @@ const Navigation = () => {
   <>
   <div className='navbar'>
     <header>
-      <NavLink to= '/'><h1>L.D</h1></NavLink>
+      <NavLink to='/'><h1>L.D</h1></NavLink>
       <p>Web Developer</p>
     </header>
 
-    <nav>
+    <button
+      className='hamburger'
+      onClick={() => setMenuOpen(o => !o)}
+      aria-label="Toggle menu"
+    >
+      {menuOpen ? '✕' : '☰'}
+    </button>
+
+    <nav className={menuOpen ? 'open' : ''}>
       {navLinks.map((link) => (
         <NavLink
-        key={link.label}
-        to={link.to}
-        className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}
+          key={link.label}
+          to={link.to}
+          className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}
+          onClick={() => setMenuOpen(false)}
         >
           {link.label}
         </NavLink>
       ))}
-      <button className='cv-button' onClick={() => setShowConfirm(true)}>
+      <button
+        className='cv-button'
+        onClick={() => { setShowConfirm(true); setMenuOpen(false); }}
+      >
         Download CV
       </button>
     </nav>

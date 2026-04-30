@@ -1,37 +1,34 @@
 .navbar {
   display: flex;
-  align-items: center;        /* h1 och nav på samma höjd */
-  justify-content: space-between; /* h1 till vänster, nav till höger */
+  align-items: center;
+  justify-content: space-between;
   padding: 0 5rem;
   position: sticky;
   top: 0;
   z-index: 100;
-  
-  /* border och skugga */
+  flex-wrap: wrap;
+
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-  
-  /* bakgrundsfärg så innehållet inte syns igenom */
-background-color: rgba(30, 43, 36, 0.75);
-backdrop-filter: blur(10px);
 
+  background-color: rgba(30, 43, 36, 0.75);
+  backdrop-filter: blur(10px);
 }
 
-header{
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
+header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 4rem;                  /* jämnt mellanrum mellan länkarna */
+  gap: 4rem;
 }
 
 nav a {
   text-decoration: none;
-  /* padding-bottom: 3px;          avstånd mellan text och linje */
   border-bottom: 2px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
@@ -40,6 +37,17 @@ nav a:hover,
 nav a.active {
   color: var(--primary);
   border-color: var(--primary);
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  line-height: 1;
 }
 
 .cv-button {
@@ -78,6 +86,7 @@ nav a.active {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin: 1rem;
 }
 
 .cv-modal p {
@@ -117,4 +126,54 @@ nav a.active {
 
 .cv-cancel:hover {
   border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 0.75rem 0 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: none;
+  }
+
+  .cv-button {
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    padding: 0.75rem 0;
+    border-bottom: 2px solid transparent;
+  }
+
+  .cv-button:hover {
+    background: transparent;
+    color: var(--primary);
+    border-bottom-color: var(--primary);
+  }
 }

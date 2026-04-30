@@ -1,7 +1,7 @@
 
 .projectsDiv {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
   margin-top: 2rem;
@@ -18,4 +18,19 @@
 
 .projectsDiv--expanded .card-thumb {
   height: 240px;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .projectsDiv {
+    gap: 1.5rem;
+  }
+
+  .projectsDiv--expanded .card {
+    flex: 1 1 100%;
+  }
+
+  .projectsDiv--expanded .card-thumb {
+    height: 180px;
+  }
 }

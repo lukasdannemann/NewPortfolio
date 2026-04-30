@@ -154,3 +154,10 @@
   }
 
   .card-github:hover { color: var(--text); }
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
