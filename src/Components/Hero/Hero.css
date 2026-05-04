@@ -25,17 +25,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.hero-tag {
-  color: var(--accent);
   font-weight: 600;
-  opacity: 0.85;
 }
 
 .hero-name {
   color: #ffffff;
-  font-weight: 800;
+  font-weight: 600;
   font-size: var(--text-2xl);
 }
 
