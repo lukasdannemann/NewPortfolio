@@ -1,8 +1,8 @@
 import './PersonalLife.css'
 
 // Byt ut mot riktiga bilder när du har dem:
-import img1 from '../../assets/Acatenango.jpg'
-import img2 from '../../assets/HighCoast.jpg'
+import img1 from '../../assets/Acatenango.JPG'
+import img2 from '../../assets/HighCoast.JPG'
 import img3 from '../../assets/SaltMine.jpg'
 
 const photos = [
