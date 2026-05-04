@@ -161,19 +161,13 @@ nav a.active {
 
   .cv-button {
     width: 100%;
-    text-align: left;
-    margin-top: 0.5rem;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    border-radius: 0;
-    padding: 0.75rem 0;
-    border-bottom: 2px solid transparent;
+    text-align: center;
+    margin-top: 0.75rem;
+    padding: 0.6rem 1rem;
   }
 
   .cv-button:hover {
-    background: transparent;
-    color: var(--primary);
-    border-bottom-color: var(--primary);
+    background: var(--primary);
+    color: #000;
   }
 }
