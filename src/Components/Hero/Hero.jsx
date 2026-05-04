@@ -18,7 +18,7 @@ export default function Hero() {
         </p>
         <p>
           <span className="intro-label">&gt; stack</span>
-          MERN (MongoDB - Express - React - Node.js)
+          MERN (MongoDB, Express, React, Node.js)
         </p>
         <p>
           <span className="intro-label">&gt; status</span>
