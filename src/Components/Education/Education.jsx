@@ -29,21 +29,6 @@ export default function Education() {
           </div>
         ))}
       </div>
-
-      {/* <div className="progression-block">
-        <p><span className="about-label">&gt; progression</span></p>
-        <div className="progression">
-          <div>
-            <p className="prog-label">// beginning</p>
-            <p className="prog-then">Static HTML websites, </p>
-          </div>
-          <span className="prog-arrow">→</span>
-          <div>
-            <p className="prog-label">// nu</p>
-            <p className="prog-now">Komponentbaserad React, fullstack MERN, deploy till produktion</p>
-          </div>
-        </div>
-      </div> */}
     </div>
   )
 }

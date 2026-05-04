@@ -129,7 +129,17 @@
 /* ── RESPONSIVT ── */
 @media (max-width: 768px) {
   .edu-period {
-    grid-template-columns: 70px 1fr;
+    grid-template-columns: 1fr;
+    gap: 0.4rem 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .edu-year {
+    padding-top: 0;
+  }
+
+  .edu-content {
+    padding-left: 1rem;
   }
 
   .progression {
