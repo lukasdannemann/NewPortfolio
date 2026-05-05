@@ -14,7 +14,7 @@ export default function Hero() {
 
         <p>
           <span className="intro-label">&gt; title</span>
-          Fullstack Web Developer
+          Fullstack Web Developer (in progress)
         </p>
         <p>
           <span className="intro-label">&gt; stack</span>
