@@ -4,7 +4,7 @@ const periods = [
     title: "Frontend — From Vanilla JS to React",
     desc: 
       [
-      "Mastered HTML, CSS, and modern JavaScript",
+      "Built a strong foundation in HTML, CSS, and modern JavaScript",
       "Transitioned to React to build dynamic and responsive UI",
       "Used Git & GitHub for efficient version control and workflow",
       "Collaborated in agile Scrum teams to get valuable real work experience"

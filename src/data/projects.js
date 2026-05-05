@@ -11,12 +11,12 @@ const projects = [
    shortDescription:
   "Team project from Backend 1 at Nackademin, a plant-swap platform where neighbors can list and trade houseplants. Built with the MEN stack and JWT auth, image uploads and a full trade lifecycle.", 
   longDescription: [
-"Plot Twist is a plant-swap platform built as the final project of my Backend 1 course at Nackademin. I worked with two backend classmates and two frontend students during a three-week period. The backend is built with Node.js, Express and MongoDB, and the frontend with Vanilla JS.",
+"Plot Twist is a plant-swap platform built as the final project of my Backend 1 course at Nackademin. I worked with two backend classmates and two frontend students during a three-week period. The backend is built with Node.js, Express and MongoDB, and the frontend with Vanilla JS. Collaborating",
  "Users can create an account, list plants they want to trade or give away, and request swaps from other users. Once both parties agree, they can set a meeting place and time, and complete the trade. The app keeps a history of past trades and notifies users when something happens to a request they're part of.",
   "I was responsible for the auth and token system. A dual-token JWT setup with separate access and refresh tokens. I also worked on the flow for products, from mongoose schema, to database functions and dedicated routes. We used express-validator for input validation and rate limiting to prevent brute-force attacks and spam."
 ],
     image: plotTwistImg,
-    badges: ["MongoDB", "Express", "Node.js", "Git", "JWT"],
+    badges: ["MongoDB", "Express", "Node.js", "Git", "JWT", "KanBan"],
     liveUrl: "https://plot-twist-fe.vercel.app/",
     githubUrl: "https://github.com/lukasdannemann/plot-twist-backend",
   },

@@ -54,7 +54,7 @@ const Navigation = () => {
         <p>Do you want to download my CV?</p>
         <div className='cv-modal-actions'>
           <a
-            href='/CV-jan2026.pdf'
+            href='/CV-maj2026.pdf'
             download='Lukas_Dannemann_CV.pdf'
             className='cv-confirm'
             onClick={() => setShowConfirm(false)}
