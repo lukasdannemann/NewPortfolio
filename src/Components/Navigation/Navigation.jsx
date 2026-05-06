@@ -1,75 +1,105 @@
-
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
+const CV_IMAGE = '/CV-maj2026_img.png';
+const CV_FILE = '/CV-maj2026.pdf';
+const CV_DOWNLOAD_NAME = 'Lukas_Dannemann_CV.pdf';
+
 const Navigation = () => {
-  const [showConfirm, setShowConfirm] = useState(false);
+  const [showCv, setShowCv] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    {label: 'About', to: '/about'},
-    {label: 'Projects', to: '/projects'}
-  ]
+    { label: 'About', to: '/about' },
+    { label: 'Projects', to: '/projects' },
+  ];
 
-  return(
-  <>
-  <div className='navbar'>
-    <header>
-      <NavLink to='/'><h1>L.D</h1></NavLink>
-      <p>Web Developer</p>
-    </header>
+  const closeCv = () => setShowCv(false);
 
-    <button
-      className='hamburger'
-      onClick={() => setMenuOpen(o => !o)}
-      aria-label="Toggle menu"
-    >
-      {menuOpen ? '✕' : '☰'}
-    </button>
-
-    <nav className={menuOpen ? 'open' : ''}>
-      {navLinks.map((link) => (
-        <NavLink
-          key={link.label}
-          to={link.to}
-          className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}
-          onClick={() => setMenuOpen(false)}
-        >
-          {link.label}
+  return (
+    <>
+      <header className='navbar'>
+        <NavLink to='/' className='logo-link'>
+          <h1 className='logo'>&gt;_</h1>
+          <p className='tagline'>Web Developer</p>
         </NavLink>
-      ))}
-      <button
-        className='cv-button'
-        onClick={() => { setShowConfirm(true); setMenuOpen(false); }}
-      >
-        Download CV
-      </button>
-    </nav>
-  </div>
 
-  {showConfirm && (
-    <div className='cv-overlay' onClick={() => setShowConfirm(false)}>
-      <div className='cv-modal' onClick={e => e.stopPropagation()}>
-        <p>Do you want to download my CV?</p>
-        <div className='cv-modal-actions'>
-          <a
-            href='/CV-maj2026.pdf'
-            download='Lukas_Dannemann_CV.pdf'
-            className='cv-confirm'
-            onClick={() => setShowConfirm(false)}
+        <button
+          className='hamburger'
+          onClick={() => setMenuOpen((o) => !o)}
+          aria-label='Toggle menu'
+          aria-expanded={menuOpen}
+          aria-controls='primary-nav'
+        >
+          {menuOpen ? '✕' : '☰'}
+        </button>
+
+        <nav
+          id='primary-nav'
+          className={menuOpen ? 'open' : ''}
+        >
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.label}
+              to={link.to}
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </NavLink>
+          ))}
+          <button
+            className='cv-button'
+            onClick={() => {
+              setShowCv(true);
+              setMenuOpen(false);
+            }}
           >
-            Yes, download
-          </a>
-          <button className='cv-cancel' onClick={() => setShowConfirm(false)}>
-            Cancel
+            View CV
           </button>
-        </div>
-      </div>
-    </div>
-  )}
-  </>)
+        </nav>
+      </header>
 
-}
+      {showCv && (
+        <div
+          className='cv-overlay'
+          onClick={closeCv}
+          role='dialog'
+          aria-modal='true'
+          aria-label='CV preview'
+        >
+          <div className='cv-modal' onClick={(e) => e.stopPropagation()}>
+            <button
+              className='cv-close'
+              onClick={closeCv}
+              aria-label='Close CV preview'
+            >
+              ✕
+            </button>
+
+            <div className='cv-image-wrapper'>
+              <img
+                src={CV_IMAGE}
+                alt='Lukas Dannemann CV'
+                className='cv-image'
+              />
+            </div>
+
+            <a
+              href={CV_FILE}
+              download={CV_DOWNLOAD_NAME}
+              className='cv-download'
+            >
+              Download
+            </a>
+          </div>
+        </div>
+      )}
+    </>
+  );
+};
 
 export default Navigation;
