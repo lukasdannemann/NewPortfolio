@@ -20,8 +20,24 @@ const Navigation = () => {
   return (
     <>
       <header className='navbar'>
-        <NavLink to='/' className='logo-link'>
-          <h1 className='logo'>&gt;_</h1>
+        <NavLink to='/' className='logo-link' aria-label='Home'>
+          <svg
+            className='logo-svg'
+            viewBox='0 0 64 64'
+            xmlns='http://www.w3.org/2000/svg'
+            aria-hidden='true'
+          >
+            <g
+              fill='none'
+              stroke='currentColor'
+              strokeWidth='8'
+              strokeLinecap='butt'
+              strokeLinejoin='miter'
+            >
+              <path d='M 16 29 L 16 16 L 36 16 A 16 16 0 0 1 36 48' />
+              <path d='M 16 35 L 16 48 L 30 48' />
+            </g>
+          </svg>
           <p className='tagline'>Web Developer</p>
         </NavLink>
 
@@ -35,10 +51,7 @@ const Navigation = () => {
           {menuOpen ? '✕' : '☰'}
         </button>
 
-        <nav
-          id='primary-nav'
-          className={menuOpen ? 'open' : ''}
-        >
+        <nav id='primary-nav' className={menuOpen ? 'open' : ''}>
           {navLinks.map((link) => (
             <NavLink
               key={link.label}
@@ -81,18 +94,10 @@ const Navigation = () => {
             </button>
 
             <div className='cv-image-wrapper'>
-              <img
-                src={CV_IMAGE}
-                alt='Lukas Dannemann CV'
-                className='cv-image'
-              />
+              <img src={CV_IMAGE} alt='Lukas Dannemann CV' className='cv-image' />
             </div>
 
-            <a
-              href={CV_FILE}
-              download={CV_DOWNLOAD_NAME}
-              className='cv-download'
-            >
+            <a href={CV_FILE} download={CV_DOWNLOAD_NAME} className='cv-download'>
               Download
             </a>
           </div>

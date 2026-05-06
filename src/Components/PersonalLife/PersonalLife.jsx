@@ -32,8 +32,7 @@ export default function PersonalLife() {
     <div className="about-card">
       <p><span className="about-label">&gt; afk</span></p>
       <p>
-        When I'm not in front of a screen, I love to spend time in nature and plan new adventures. 
-        Here are some photos I've taken along the way.
+        Photos from when not in front of a screen.
       </p>
 
       <div className="photo-grid">
