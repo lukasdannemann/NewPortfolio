@@ -14,11 +14,11 @@ export default function Hero() {
 
         <p>
           <span className="intro-label">&gt; title</span>
-          Fullstack Web Developer (in progress)
+          <span>Fullstack Web Developer <span className="nowrap">(in progress)</span></span>
         </p>
         <p>
           <span className="intro-label">&gt; stack</span>
-          MERN (MongoDB, Express, React, Node.js)
+          <span>MERN <span className="nowrap">(MongoDB, Express, React, Node.js)</span></span>
         </p>
         <p>
           <span className="intro-label">&gt; status</span>
