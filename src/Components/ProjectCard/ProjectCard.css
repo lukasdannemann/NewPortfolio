@@ -98,6 +98,23 @@
     color: white;
   }
 
+  /* Projects (expanded=true): clamp första paragrafen till 4 rader när kollapsad */
+  .card-desc.long {
+    min-height: 6rem;
+  }
+
+  .card-desc-first {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-desc.long.is-open .card-desc-first {
+    display: block;
+    overflow: visible;
+  }
+
   /* badges */
   .card-badges {
     display: flex;
@@ -154,6 +171,26 @@
   }
 
   .card-github:hover { color: var(--text); }
+
+  /* ── READ MORE-KNAPP ── */
+  .card-toggle {
+    align-self: flex-start;
+    background: transparent;
+    border: none;
+    padding: 0.4rem 0 0;
+    margin-top: 0.2rem;
+    color: var(--primary);
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .card-toggle:hover {
+    color: var(--accent);
+  }
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
