@@ -2,7 +2,7 @@
 
 :root {
   /* =====================
-     FÄRGER
+     COLORS
      ===================== */
   --bg-color:   #141a17;
   --surface:    #1e2b24;
@@ -13,7 +13,7 @@
   --muted:      #8a9e94;
 
   /* =====================
-     TYPOGRAFI
+     TEXT
      ===================== */
   --font-heading: 'Source Code Pro', monospace;
   --font-body:    'Space Grotesk', sans-serif;
@@ -47,8 +47,12 @@
 }
 
 /* =====================
-   RESET & GLOBAL
+   GLOBAL
    ===================== */
+html, body {
+  overscroll-behavior-y: none;
+}
+
 body {
   background-color: var(--bg-color);
   padding: 0;
