@@ -18,7 +18,7 @@ export default function AboutMe() {
       <p className="about-bio">
         I got into development through a curiosity for how things work behind the scenes, and pretty quickly found myself wanting to build things on my own.
         Since then, I’ve really come to enjoy the whole process. From early ideas to finished products, even if it means figuring things out along the way.
-        I’m currently studying fullstack development at Nackademin and I’m now looking for a LIA opportunity where I can keep learning, contribute, and get real experience working with others.
+        I’m currently studying fullstack development at Nackademin in Stockholm and I’m now looking for a LIA opportunity where I can keep learning, contribute, and get real experience working with others.
       </p>
     </div>
   )
