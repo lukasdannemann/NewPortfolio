@@ -40,7 +40,7 @@ longDescription: [
   {
     id: 3,
     type: "Solo",
-    title: "Wedding site",
+    title: "Wedding website",
     shortDescription:
   "A wedding website with RSVP, schedule and info pages. Shown here as an anonymized demo — names and dates are fictional and form submissions are disabled",
 longDescription: [
