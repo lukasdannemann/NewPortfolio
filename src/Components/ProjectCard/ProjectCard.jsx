@@ -49,7 +49,8 @@ export default function ProjectCard({ project, expanded = false }) {
                 <a className="card-link" target='_blank' href={liveUrl}>
                     Live site <span className="arrow">↗</span>
                 </a>
-                <a className="card-link" target='_blank' href={githubUrl}>GitHub ↗</a>
+                {githubUrl && <a className="card-link" target='_blank' href={githubUrl}>GitHub ↗</a>}
+                
                 {!expanded && (
                     <a className="card-link" href="/projects">Show more →</a>
                 )}

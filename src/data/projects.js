@@ -1,6 +1,7 @@
 import activityAppIMG from "../assets/ActivityApp_img.jpg";
 import pokemonAppIMG from "../assets/PokemonApp_img.png";
 import plotTwistImg from '../assets/plot-twist-img.jpg';
+import weddingDemo from "../assets/wedding-demo.png"
 
 const projects = [
   
@@ -38,6 +39,23 @@ longDescription: [
   },
   {
     id: 3,
+    type: "Solo",
+    title: "Wedding site",
+    shortDescription:
+  "A wedding website with RSVP, schedule and info pages. Shown here as an anonymized demo — names and dates are fictional and form submissions are disabled",
+longDescription: [
+  "I got asked to build a wedding website for my sister in law with RSVP, schedule and form for speeches. This was my solution.",
+  "I started from a wireframe styled after the couple's 'save the date' card, and followed their wish for something clean and easy to use. The site is bilingual (Swedish/English) and sits behind a soft access-code gate so only invited guests get in.",
+  "Built with React and React Router. The RSVP and speech forms post to a Google Apps Script that writes responses straight into a Google Sheet the couple can follow.",
+  "This is an anonymized demo. Names, dates and contact details are fictional and form submissions are disabled."
+],
+    image: weddingDemo,
+    badges: ["React", "JSX", "React Router", "Git"],
+    liveUrl: "https://wedding-demo-git-main-lukas-projects-a153b405.vercel.app/",
+  },
+
+  {
+    id: 4,
     type: "Solo",
     title: "Pokédex",
     shortDescription:
